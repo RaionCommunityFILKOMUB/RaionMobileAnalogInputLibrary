@@ -32,8 +32,16 @@ Assets/
 ```
   
 ## Usage
-By only writing this statement
+To initialize the library:
 ```
 raion.MobileInputAnalog.GetInstance();
 ```
-all the library codes will run.
+
+To use the library:
+```
+float speed = 10.0f;
+Vector2 direction = raion.MobileInputAnalog.GetInstance().GetDirection();
+
+// Moving a GameObject
+transform.position += direction * speed * Time.deltaTime;
+```
