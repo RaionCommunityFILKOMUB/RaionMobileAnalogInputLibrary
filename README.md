@@ -7,6 +7,7 @@ Virtual Game Analog Library for Unity
 [Link]: https://github.com/jmsrsd/MobileInputAnalog/raw/master/Build/Raion.MobileInputAnalog.unitypackage
   
 ## Dir structure
+```
 Assets/
 ├── raion/  
 │   ├── GeneralInput/  
@@ -24,7 +25,8 @@ Assets/
     └── raion/  
         └── MobileInputAnalog/  
             └── Sprites/  
-                └── MobileInputAnalog.Sprite.Circle.png  
+                └── MobileInputAnalog.Sprite.Circle.png 
+```
   
 ## Usage
 By only writing this statement
