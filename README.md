@@ -4,7 +4,7 @@
 Virtual Game Analog Library for Unity
   
 ## Build Link
-[Link]: https://github.com/jmsrsd/MobileInputAnalog/raw/master/Build/Raion.MobileInputAnalog.unitypackage
+[Link](https://github.com/jmsrsd/MobileInputAnalog/raw/master/Build/Raion.MobileInputAnalog.unitypackage)
   
 ## Dir structure
 ```
@@ -31,6 +31,6 @@ Assets/
 ## Usage
 By only writing this statement
 ```
-MobileInputAnalog.GetInstance();
+raion.MobileInputAnalog.GetInstance();
 ```
 all the library code will run.
