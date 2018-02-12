@@ -33,4 +33,4 @@ By only writing this statement
 ```
 raion.MobileInputAnalog.GetInstance();
 ```
-all the library code will run.
+all the library codes will run.
