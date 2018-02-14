@@ -6,14 +6,15 @@ using UnityEngine.UI;
 namespace raion {
 public class MobileInputAnalogUI : MonoBehaviour {
   public static float scale = 0.375f;
-  
+
   private void Start() {
     this.Setup();
   }
-  
+
   private void Update() {
-    this.canvasSize = this.GetMobileInputAnalogCanvas().GetRectTransform().sizeDelta;
-    
+    this.canvasSize =
+      this.GetMobileInputAnalogCanvas().GetRectTransform().sizeDelta;
+
     if (Input.touchCount > 0 ||
         (Input.GetMouseButton(0) && !Input.GetMouseButtonDown(0))) {
       this.direction = ((foreground.GetRectTransform().anchoredPosition
@@ -26,10 +27,10 @@ public class MobileInputAnalogUI : MonoBehaviour {
       this.direction.y = this.direction.x;
     }
   }
-  
+
   public static string pathSpriteCircle =
-    "raion/MobileInputAnalog/Sprites/MobileInputAnalog.Sprite.Circle";
-    
+    "raion/MobileInputAnalog/Sprites/Raion.MobileInputAnalog.Sprite.Circle";
+
   private MobileInputAnalogUIBackground background;
   public MobileInputAnalogUIBackground GetBackground() {
     if (this.background == null) {
@@ -38,10 +39,10 @@ public class MobileInputAnalogUI : MonoBehaviour {
                         .InstantiateAsComponent<MobileInputAnalogUIBackground>();
       this.background.SetMobileInputAnalogUI(this);
     }
-    
+
     return this.background;
   }
-  
+
   private MobileInputAnalogUIForeground foreground;
   public MobileInputAnalogUIForeground GetForeground() {
     if (this.foreground == null) {
@@ -51,31 +52,32 @@ public class MobileInputAnalogUI : MonoBehaviour {
       this.foreground.SetMobileInputAnalogUI(this);
       this.foreground.SetBackground(this.GetBackground());
     }
-    
+
     return this.foreground;
   }
-  
+
   private void Setup() {
     MobileInputAnalogHelper.AddComponentsGameObject(
       new Type[] {typeof(UnityEngine.RectTransform)
                  },
       this.gameObject);
-      
+
     this.rectTransform = this.GetRectTransform();
     this.background = this.GetBackground();
     this.foreground = this.GetForeground();
   }
-  
+
   private MobileInputAnalogCanvas mobileInputAnalogCanvas;
-  public void SetMobileInputAnalogCanvas(MobileInputAnalogCanvas mobileInputAnalogCanvas) {
+  public void SetMobileInputAnalogCanvas(MobileInputAnalogCanvas
+                                         mobileInputAnalogCanvas) {
     this.mobileInputAnalogCanvas = mobileInputAnalogCanvas;
     this.transform.SetParent(this.mobileInputAnalogCanvas.transform);
   }
-  
+
   public MobileInputAnalogCanvas GetMobileInputAnalogCanvas() {
     return this.mobileInputAnalogCanvas;
   }
-  
+
   private RectTransform rectTransform;
   public RectTransform GetRectTransform() {
     if (this.rectTransform == null) {
@@ -84,13 +86,15 @@ public class MobileInputAnalogUI : MonoBehaviour {
         ? this.gameObject.AddComponent<RectTransform>()
         : this.gameObject.GetComponent<RectTransform>();
     }
-    
+
     return this.rectTransform;
   }
-  
+
   private Vector2 direction;
-  public Vector2 GetDirection() { return this.direction; }
-  
+  public Vector2 GetDirection() {
+    return this.direction;
+  }
+
   private Vector2 canvasSize;
   public Vector2 GetCanvasSize() {
     return this.canvasSize;
