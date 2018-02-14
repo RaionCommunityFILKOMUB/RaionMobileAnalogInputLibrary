@@ -39,9 +39,17 @@ raion.MobileInputAnalog.GetInstance();
 
 To use the library:
 ```
-float speed = 10.0f;
-Vector2 direction = raion.MobileInputAnalog.GetInstance().GetDirection();
+  .
+  .
+  .
+  private void Update() {
+    float speed = 10.0f;
+    Vector2 direction = raion.MobileInputAnalog.GetInstance().GetDirection();
 
-// Moving a GameObject
-transform.position += direction * speed * Time.deltaTime;
+    // Moving a GameObject
+    transform.position += direction * speed * Time.deltaTime;
+  }
+  .
+  .
+  .
 ```
