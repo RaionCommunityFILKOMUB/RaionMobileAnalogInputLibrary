@@ -17,24 +17,33 @@ Virtual Game Analog Library for Unity
   
 ## Dir structure
 ```
-Assets/
-├── raion/  
-│   ├── GeneralInput/  
-|   |   └── GeneralInput.cs  
-│   └── MobileInputAnalog/  
-|       └── Scripts/  
-|           ├── MobileInputAnalog.cs  
-|           ├── MobileInputAnalogCanvas.cs  
-|           ├── MobileInputAnalogHelper.cs  
-|           ├── MobileInputAnalogUI.cs  
-|           ├── MobileInputAnalogUIBackground.cs  
-|           ├── MobileInputAnalogUIForeground.cs  
-|           └── TestMobileInputAnalog.cs  
-└── Resources/  
-    └── raion/  
-        └── MobileInputAnalog/  
-            └── Sprites/  
-                └── MobileInputAnalog.Sprite.Circle.png 
+Assets
+├───raion
+│   ├───GeneralInput
+│   │       GeneralInput.cs
+│   │
+│   └───MobileInputAnalog
+│       ├───Materials
+│       │       Raion.MobileInputAnalog.Material.Standard.Gray.mat
+│       │       Raion.MobileInputAnalog.Material.Standard.White.mat
+│       │
+│       ├───Scenes
+│       │       Raion.MobileInputAnalog.Scene.Test.unity
+│       │
+│       └───Scripts
+│               MobileInputAnalog.cs
+│               MobileInputAnalogCanvas.cs
+│               MobileInputAnalogHelper.cs
+│               MobileInputAnalogUI.cs
+│               MobileInputAnalogUIBackground.cs
+│               MobileInputAnalogUIForeground.cs
+│               TestMobileInputAnalog.cs
+│
+└───Resources
+    └───raion
+        └───MobileInputAnalog
+            └───Sprites
+                    Raion.MobileInputAnalog.Sprite.Circle.png 
 ```
   
 ## Usage
