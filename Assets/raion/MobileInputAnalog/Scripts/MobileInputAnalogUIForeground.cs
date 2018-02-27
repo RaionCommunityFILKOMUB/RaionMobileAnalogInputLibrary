@@ -74,6 +74,8 @@ public class MobileInputAnalogUIForeground : MonoBehaviour {
   }
 
   private void Setup() {
+    this.gameObject.layer = LayerMask.NameToLayer("UI");
+
     MobileInputAnalogHelper.AddComponentsGameObject(
       new Type[] {typeof(UnityEngine.RectTransform),
                   typeof(UnityEngine.UI.Image)

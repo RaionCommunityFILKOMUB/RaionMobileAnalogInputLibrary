@@ -5,9 +5,13 @@ using UnityEngine.UI;
 
 namespace raion {
 public class MobileInputAnalogCanvas : MonoBehaviour {
-  private void Start() { this.Setup(); }
-  
+  private void Start() {
+    this.Setup();
+  }
+
   private void Setup() {
+    this.gameObject.layer = LayerMask.NameToLayer("UI");
+
     MobileInputAnalogHelper.AddComponentsGameObject(
       new Type[] {typeof(UnityEngine.RectTransform),
                   typeof(UnityEngine.Canvas),
@@ -15,16 +19,16 @@ public class MobileInputAnalogCanvas : MonoBehaviour {
                   typeof(UnityEngine.UI.GraphicRaycaster)
                  },
       this.gameObject);
-      
+
     canvas = this.gameObject.GetComponent<UnityEngine.Canvas>();
     canvas.renderMode = RenderMode.ScreenSpaceOverlay;
   }
-  
+
   private UnityEngine.Canvas canvas;
   public UnityEngine.Canvas GetCanvas() {
     return this.canvas;
   }
-  
+
   private RectTransform rectTransform;
   public RectTransform GetRectTransform() {
     if (this.rectTransform == null) {
@@ -33,7 +37,7 @@ public class MobileInputAnalogCanvas : MonoBehaviour {
         ? this.gameObject.AddComponent<RectTransform>()
         : this.gameObject.GetComponent<RectTransform>();
     }
-    
+
     return this.rectTransform;
   }
 }
