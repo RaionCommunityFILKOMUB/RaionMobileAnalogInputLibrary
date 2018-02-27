@@ -13,37 +13,38 @@ Virtual Game Analog Library for Unity
 4. Read "Usage" section of this page to know how to use the library
 
 ## Build Link
-[Link](https://github.com/jmsrsd/MobileInputAnalog/raw/master/Build/Raion.MobileInputAnalog.unitypackage)
+[.unitypackage](https://github.com/jmsrsd/MobileInputAnalog/raw/master/Build/Raion.MobileInputAnalog.unitypackage)
+[.apk](https://github.com/jmsrsd/RaionMobileInputAnalog/raw/master/Build/apk/Raion.AnalogTouchInput.Test.apk)
   
 ## Dir structure
 ```
 Assets
 ├───raion
-│   ├───GeneralInput
-│   │       GeneralInput.cs
+│   ├───MobileInputAnalog
+│   │   ├───Materials
+│   │   │       Raion.MobileInputAnalog.Material.Standard.Gray.mat
+│   │   │       Raion.MobileInputAnalog.Material.Standard.White.mat
+│   │   │
+│   │   ├───Scenes
+│   │   │       Raion.MobileInputAnalog.Scene.Test.unity
+│   │   │
+│   │   └───Scripts
+│   │           MobileInputAnalog.cs
+│   │           MobileInputAnalogCanvas.cs
+│   │           MobileInputAnalogHelper.cs
+│   │           MobileInputAnalogUI.cs
+│   │           MobileInputAnalogUIBackground.cs
+│   │           MobileInputAnalogUIForeground.cs
+│   │           TestMobileInputAnalog.cs
 │   │
-│   └───MobileInputAnalog
-│       ├───Materials
-│       │       Raion.MobileInputAnalog.Material.Standard.Gray.mat
-│       │       Raion.MobileInputAnalog.Material.Standard.White.mat
-│       │
-│       ├───Scenes
-│       │       Raion.MobileInputAnalog.Scene.Test.unity
-│       │
-│       └───Scripts
-│               MobileInputAnalog.cs
-│               MobileInputAnalogCanvas.cs
-│               MobileInputAnalogHelper.cs
-│               MobileInputAnalogUI.cs
-│               MobileInputAnalogUIBackground.cs
-│               MobileInputAnalogUIForeground.cs
-│               TestMobileInputAnalog.cs
+│   └───QuitInput
+│           QuitInput.cs
 │
 └───Resources
     └───raion
         └───MobileInputAnalog
             └───Sprites
-                    Raion.MobileInputAnalog.Sprite.Circle.png 
+                    Raion.MobileInputAnalog.Sprite.Circle.png
 ```
   
 ## Usage
