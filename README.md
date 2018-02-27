@@ -9,7 +9,7 @@ Virtual Game Analog Library for Unity
 ## Installation
 1. Download the \*.unitypackage file(s) in Build dir or in "Build Link" section of this page
 2. Open the \*.unitypackage file(s)
-3. Click all button and then import button in Unity import package dialogue
+3. Click "All" button and then import button in Unity import package dialogue
 4. Read "Usage" section of this page to know how to use the library
 
 ## Build Link
