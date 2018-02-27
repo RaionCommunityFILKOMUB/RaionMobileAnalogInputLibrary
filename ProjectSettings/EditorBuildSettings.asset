@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TouchInput/Scenes/TouchInput.Test.unity
-    guid: 8d1fd577e63a46e4996d578665fa44de
+    path: Assets/raion/MobileInputAnalog/Scenes/Raion.MobileInputAnalog.Scene.Test.unity
+    guid: cfc18af8af66a3b4c9341773f8409dcd
