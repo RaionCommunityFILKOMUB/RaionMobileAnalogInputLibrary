@@ -20,25 +20,19 @@ Virtual Game Analog Library for Unity
 ```
 Assets
 ├───raion
-│   ├───MobileInputAnalog
-│   │   ├───Materials
-│   │   │       Raion.MobileInputAnalog.Material.Standard.Gray.mat
-│   │   │       Raion.MobileInputAnalog.Material.Standard.White.mat
-│   │   │
-│   │   ├───Scenes
-│   │   │       Raion.MobileInputAnalog.Scene.Test.unity
-│   │   │
-│   │   └───Scripts
-│   │           MobileInputAnalog.cs
-│   │           MobileInputAnalogCanvas.cs
-│   │           MobileInputAnalogHelper.cs
-│   │           MobileInputAnalogUI.cs
-│   │           MobileInputAnalogUIBackground.cs
-│   │           MobileInputAnalogUIForeground.cs
-│   │           TestMobileInputAnalog.cs
-│   │
-│   └───QuitInput
-│           QuitInput.cs
+│   └───MobileInputAnalog
+│       ├───Materials
+│       │       Raion.MobileInputAnalog.Material.Standard.Gray.mat
+│       │       Raion.MobileInputAnalog.Material.Standard.White.mat
+│       │
+│       └───Scripts
+│               MobileInputAnalog.cs
+│               MobileInputAnalogCanvas.cs
+│               MobileInputAnalogHelper.cs
+│               MobileInputAnalogUI.cs
+│               MobileInputAnalogUIBackground.cs
+│               MobileInputAnalogUIForeground.cs
+│               TestMobileInputAnalog.cs
 │
 └───Resources
     └───raion
