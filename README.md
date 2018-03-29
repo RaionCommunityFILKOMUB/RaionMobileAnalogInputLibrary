@@ -1,7 +1,7 @@
 # RaionMobileInputAnalog
-Virtual Game Analog Library for Unity
+Virtual Game Analog Library for Unity  
 ![Generic badge](https://img.shields.io/badge/Version-v1.0.0-green.svg)
-![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)  
+![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Screenshots
 <p align="center">
