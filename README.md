@@ -1,11 +1,12 @@
 # RaionMobileInputAnalog
+Virtual Game Analog Library for Unity
 ![Generic badge](https://img.shields.io/badge/Version-v1.0.0-green.svg)
 ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)  
-## Description
-Virtual Game Analog Library for Unity
-  
+
 ## Screenshots
-<img src="https://raw.githubusercontent.com/jmsrsd/RaionMobileInputAnalog/master/Screenshots/Screenshot.00.gif" height="320"/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jmsrsd/RaionMobileInputAnalog/master/Screenshots/Screenshot.00.gif" height="320"/>
+</p>
 
 ## Installation
 1. Download the \*.unitypackage file(s) in Build dir or in "Build Link" section of this page
