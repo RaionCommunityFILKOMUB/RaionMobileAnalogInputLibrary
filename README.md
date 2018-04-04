@@ -24,10 +24,6 @@ Virtual Game Analog Library for Unity
 Assets
 ├───raion
 │   └───MobileInputAnalog
-│       ├───Materials
-│       │       Raion.MobileInputAnalog.Material.Standard.Gray.mat
-│       │       Raion.MobileInputAnalog.Material.Standard.White.mat
-│       │
 │       └───Scripts
 │           │   Library.cs
 │           │
