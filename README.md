@@ -31,24 +31,18 @@ Assets
 │       └───Scripts
 │           │   Library.cs
 │           │
-│           ├───Internal
-│           │       Canvas.cs
-│           │       Helper.cs
-│           │       UI.cs
-│           │       UIBackground.cs
-│           │       UIForeground.cs
-│           │
-│           └───Test
-│                   LibraryTest.cs
+│           └───Internal
+│                   Canvas.cs
+│                   Helper.cs
+│                   UI.cs
+│                   UIBackground.cs
+│                   UIForeground.cs
 │
-├───Resources
-│   └───raion
-│       └───MobileInputAnalog
-│           └───Sprites
-│                   Raion.MobileInputAnalog.Sprite.Circle.png
-│
-└───Scenes
-        Scene.Test.unity
+└───Resources
+    └───raion
+        └───MobileInputAnalog
+            └───Sprites
+                    Raion.MobileInputAnalog.Sprite.Circle.png
 ```
   
 ## Usage
