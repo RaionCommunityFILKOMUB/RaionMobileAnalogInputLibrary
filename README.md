@@ -1,4 +1,4 @@
-# RaionMobileInputAnalogLibrary
+# RaionMobileAnalogInputLibrary
 Virtual Game Analog Library for Unity
   
 ![Generic badge](https://img.shields.io/badge/Version-1.0.1-green.svg)
@@ -16,14 +16,14 @@ Virtual Game Analog Library for Unity
 4. Read "Usage" section of this page to know how to use the library
 
 ## Build Link
-[.unitypackage](https://github.com/jmsrsd/RaionMobileInputAnalogLibrary/blob/master/Build/101/raion.MobileInputAnalogLibrary.101.unitypackage)  
-[.apk](https://github.com/jmsrsd/RaionMobileInputAnalogLibrary/blob/master/Build/apk/100/raion.MobileInputAnalogLibrary.100.apk)
+[.unitypackage](https://github.com/jmsrsd/RaionMobileAnalogInputLibrary/raw/master/Build/101/raion.MobileInputAnalogLibrary.101.unitypackage)  
+[.apk](https://github.com/jmsrsd/RaionMobileAnalogInputLibrary/raw/master/Build/apk/100/raion.MobileInputAnalogLibrary.100.apk)
   
 ## Dir structure
 ```
 Assets
 ├───raion
-│   └───MobileInputAnalog
+│   └───MobileAnalogInput
 │       └───Scripts
 │           │   Library.cs
 │           │
@@ -36,15 +36,15 @@ Assets
 │
 └───Resources
     └───raion
-        └───MobileInputAnalog
+        └───MobileAnalogInput
             └───Sprites
-                    Raion.MobileInputAnalog.Sprite.Circle.png
+                    Raion.MobileAnalogInput.Sprite.Circle.png
 ```
   
 ## Usage
 To initialize the library:
 ```C#
-raion.MobileInputAnalog.Library.GetInstance();
+raion.MobileAnalogInput.Library.GetInstance();
 ```
 
 To use the library:
@@ -56,7 +56,7 @@ public class LibraryTest : MonoBehaviour {
     float speed = 10.0f;
 
     Vector2 direction =
-      raion.MobileInputAnalog.Library.GetInstance().GetDirection();
+      raion.MobileAnalogInput.Library.GetInstance().GetDirection();
 
     Vector3 velocity = Vector3.zero;
     velocity.x = direction.x;
