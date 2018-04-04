@@ -1,4 +1,4 @@
-# RaionMobileInputAnalog
+# RaionMobileInputAnalogLibrary
 Virtual Game Analog Library for Unity
   
 ![Generic badge](https://img.shields.io/badge/Version-v1.0.0-green.svg)
@@ -51,16 +51,23 @@ raion.MobileInputAnalog.GetInstance();
 ```
 
 To use the library:
-```
+```C#
 using UnityEngine;
 
-public class TestMobileInputAnalog : MonoBehaviour {
+public class LibraryTest : MonoBehaviour {
   private void Update() {
     float speed = 10.0f;
-    Vector2 direction = raion.MobileInputAnalog.GetInstance().GetDirection();
+
+    Vector2 direction =
+      raion.MobileInputAnalog.Library.GetInstance().GetDirection();
+
+    Vector3 velocity = Vector3.zero;
+    velocity.x = direction.x;
+    velocity.z = direction.y;
 
     // Moving the GameObject
-    transform.position += (Vector3) direction * speed * Time.deltaTime;
+    transform.position += velocity * speed * Time.deltaTime;
   }
 }
+
 ```
