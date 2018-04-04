@@ -1,7 +1,7 @@
 # RaionMobileInputAnalogLibrary
 Virtual Game Analog Library for Unity
   
-![Generic badge](https://img.shields.io/badge/Version-v1.0.0-green.svg)
+![Generic badge](https://img.shields.io/badge/Version-v1.0.1-green.svg)
 ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Screenshots
@@ -16,8 +16,8 @@ Virtual Game Analog Library for Unity
 4. Read "Usage" section of this page to know how to use the library
 
 ## Build Link
-[.unitypackage](https://github.com/jmsrsd/MobileInputAnalog/raw/master/Build/Raion.MobileInputAnalog.unitypackage)  
-[.apk](https://github.com/jmsrsd/RaionMobileInputAnalog/raw/master/Build/apk/Raion.AnalogTouchInput.Test.apk)
+[.unitypackage](https://github.com/jmsrsd/RaionMobileInputAnalogLibrary/blob/master/Build/101/raion.MobileInputAnalogLibrary.101.unitypackage)  
+[.apk](https://github.com/jmsrsd/RaionMobileInputAnalogLibrary/blob/master/Build/apk/100/raion.MobileInputAnalogLibrary.100.apk)
   
 ## Dir structure
 ```
@@ -29,25 +29,32 @@ Assets
 │       │       Raion.MobileInputAnalog.Material.Standard.White.mat
 │       │
 │       └───Scripts
-│               MobileInputAnalog.cs
-│               MobileInputAnalogCanvas.cs
-│               MobileInputAnalogHelper.cs
-│               MobileInputAnalogUI.cs
-│               MobileInputAnalogUIBackground.cs
-│               MobileInputAnalogUIForeground.cs
-│               TestMobileInputAnalog.cs
+│           │   Library.cs
+│           │
+│           ├───Internal
+│           │       Canvas.cs
+│           │       Helper.cs
+│           │       UI.cs
+│           │       UIBackground.cs
+│           │       UIForeground.cs
+│           │
+│           └───Test
+│                   LibraryTest.cs
 │
-└───Resources
-    └───raion
-        └───MobileInputAnalog
-            └───Sprites
-                    Raion.MobileInputAnalog.Sprite.Circle.png
+├───Resources
+│   └───raion
+│       └───MobileInputAnalog
+│           └───Sprites
+│                   Raion.MobileInputAnalog.Sprite.Circle.png
+│
+└───Scenes
+        Scene.Test.unity
 ```
   
 ## Usage
 To initialize the library:
-```
-raion.MobileInputAnalog.GetInstance();
+```C#
+raion.MobileInputAnalog.Library.GetInstance();
 ```
 
 To use the library:
